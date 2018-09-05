@@ -1,0 +1,22 @@
+extends layout.pug
+block content
+
+    div.container
+        div.input-group.flex-container    
+            div.btn-group(role="group", aria-label="Third group")
+                a.btn.btn-success.my-2.my-sm-12(href="/login", role="button") Connexion
+            
+            div.btn-group(role="group", aria-label="Third group")
+                a.btn.btn-outline-success.my-2.my-sm-12(href="/register", role="button") Inscription
+    form
+        ul.form-style-1
+                li
+                    label Email 
+                        span.required *
+                    input.field-long(type="email", name="email")
+                li
+                    label Mot de Passe  
+                        span.required *
+                    input.field-long(type="password", name="password")
+                li
+                    input(type="submit", value="submit")  
