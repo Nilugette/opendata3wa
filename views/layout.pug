@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="fr">
     <head>
@@ -7,6 +7,17 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     </head>
+    
+    
+    each messages, kind in flashMessages 
+        <div class="alert alert-flash alert-#{kind}">
+            each message in messages
+                | #{message} 
+        </div>
+
+            
+
+
 
     body.main-container 
         block content
